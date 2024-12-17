@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Caesar Cipher</h1>
+    <div class="cipher-blocks">
+      <!-- Левый блок: Ввод текста -->
+      <div class="input-block">
+        <h2>Input Text</h2>
+        <textarea id="text" placeholder="Enter text to encode/decode"></textarea>
+        <label for="key">Key (Shift):</label>
+        <input type="number" id="key" placeholder="Enter shift value">
+        <div class="buttons">
+          <button id="encode">Encode</button>
+          <button id="decode">Decode</button>
+        </div>
+      </div>
+
+      <!-- Правый блок: Вывод текста -->
+      <div class="output-block">
+        <h2>Output Text</h2>
+        <textarea id="output" readonly></textarea>
+        <!-- Блок с поддерживаемыми языками -->
+        <div class="languages">
+          <h3>Supported Languages:</h3>
+          <ul>
+            <li>English language</li>
+            <li>Русский язык</li>
+            <li>Українська мова</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
